@@ -1,0 +1,51 @@
+body{
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+p{
+    margin: 5px 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(132, 0, 255);
+    font-weight: 500;
+}
+a:hover{
+    text-decoration: underline;
+}
+.business-card{
+    margin: 100px auto;
+    width: 300px;
+    background-color: rgb(212, 181, 241);
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+.business-card img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.business-card .full-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.921);
+}
+.business-card .designation{
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.business-card .company{
+    color: rgb(103, 102, 102);
+}
+.social-media a:nth-of-type(even){
+    margin: 15px;
+}
+hr{
+    border: none;
+    border-top: 1px dashed slategray;
+    margin: 25px 0;
+}
