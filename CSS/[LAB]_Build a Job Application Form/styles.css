@@ -1,0 +1,108 @@
+.container{
+    border-radius: 10px;
+    width: 500px;
+    height: 565px;
+    margin: 0 auto;
+    margin-top: 150px;
+    padding: 1.5rem;
+    box-shadow: 5px 5px 10px black;
+}
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.container > p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.805);
+}
+
+.container  hr{
+    border: 0;
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+}
+.container form label{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input:nth-child(1){
+    border-radius: 5px;
+}
+.container form input{
+    margin-bottom: 0.5rem;
+}
+.container form input:required, 
+textarea, 
+select{
+    width: 100%;
+}
+input[type="text"],
+input[type="email"],
+select{
+    border-radius: 5px;
+    height: 30px;
+}
+/* select style */
+form select{
+    margin-top: 5px;
+}
+form select option{
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* fieldset style */
+form fieldset{
+    margin: 1rem 0;
+}
+form fieldset legend{
+    font-size: 1.5rem;
+}
+/* apply button */
+form button{
+    width: 200px;
+    height: 30px;
+    margin-top: 0.5rem;
+    background-color: green;
+    outline: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background 0.5s ease-in-out, color 0.4s ease;
+}
+form button:hover{
+    background-color: #a1f3a3;
+    color: black;
+}
+
+/* ------------------------------------------------------- */
+/* freecodecamp rules */
+input:focus, textarea:focus{
+    border: 2px solid rgb(0, 94, 255);
+}
+input:invalid, textarea:invalid, select:invalid{
+    border: 1px solid red;
+}
+input:valid, textarea:valid, select:valid{
+    border: 1px solid green;
+}
+
+.radio-group input[type="radio"]:checked{
+    background-color: green;
+    color: green;
+    border:1px solid green;
+    box-shadow: 0 0 25px green;
+}
+.radio-group input[type="radio"]:checked ~ label{
+    color: green;
+}
