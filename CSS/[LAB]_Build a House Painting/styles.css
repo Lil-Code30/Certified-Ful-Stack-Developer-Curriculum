@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(44, 180, 226);
+    height: 100vh;
+}
+#house{
+    position: relative;
+    top: 150px;
+    left: 650px;
+    z-index: 90;
+    width: 500px;
+    height: 400px;
+    background-color: rgb(137, 71, 32);
+    border: 5px solid rgb(73, 29, 3);
+}
+#chimney-smoke{
+    position: absolute;
+    top: -150px;
+    left: 380px;
+    z-index: 99;
+    background-color: rgba(21, 20, 20, 0.508);
+    width: 50px;
+    height: 50px;
+    border-radius: 40%;
+    box-shadow: 0 -10px 25px 5px rgba(29, 28, 28, 0.402),
+    0 -15px 25px 5px rgba(42, 42, 42, 0.402);
+}
+#chimney{
+    position: absolute;
+    top: -120px;
+    left: 350px;
+    background-color: gray;
+    border: 2px solid black;
+    z-index: 95;
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#chimney div{
+    border: 3px solid black;
+    width: 95px;
+    height: 50px;
+}
+#roof{
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    border: 2px solid black;
+}
+#roof-1{
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    width: 500px;
+    background-color: black;
+    height: 100px;
+    transform: skew(-45deg);
+}
+#roof-2{
+    position: absolute;
+    width: 500px;
+    background-color: black;
+    height: 100px;
+    transform: skew(45deg);
+    left: 50px;
+    top: -30px;
+}
+.window{
+    display: flex;
+}
+.window div{
+    border: 3px solid rgb(73, 29, 3);
+    width: 80px;
+}
+#window-1{
+    background-color: rgb(162, 79, 32);
+    border: 5px solid rgb(73, 29, 3);
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    z-index: 95;
+    top: 150px;
+    left: 20px;
+}
+#window-2{
+    background-color: rgb(162, 79, 32);
+    border: 5px solid rgb(73, 29, 3);
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    z-index: 95;
+    top: 150px;
+    right: 20px;
+}
+
+#door{
+    position: absolute;
+    bottom: 0px;
+    left: 190px;
+    height: 150px;
+    width: 110px;
+    border: 5px solid black;
+    background-color: gray;
+}
+#door > div{
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+}
+#welcome{
+    position: absolute;
+    color: white;
+    z-index: 99;
+    width: 110px;
+    height: 50px;
+    border: 5px solid rgb(41, 11, 0);
+    background-color: orangered;
+    top: 420px;
+    left: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(-20deg);
+}
+#ground{
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+}
