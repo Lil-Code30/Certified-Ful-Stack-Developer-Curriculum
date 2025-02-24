@@ -1,0 +1,74 @@
+:root{
+    --color0: #ffffff;
+    --color1: #c0a9ff;
+    --color2: #8255fe;
+    --color3: #4300ff ;
+    --color4: #2d00aa;
+    --color5: #160055;
+    --solid-border: 2px solid black;
+    --dashed-border:2px dashed black;
+}
+table{
+    border-collapse: collapse;
+} 
+td{
+    height: 30px;
+    width: 100px;
+    text-align: center;
+}
+.sharp td{
+    border-bottom: var(--solid-border);
+}
+.half td{
+    border-bottom: var(--dashed-border) !important;
+}
+
+.available-0{
+    background-color: var(--color0);
+}
+.available-1{
+    background-color: var(--color1);
+}
+.available-2{
+    background-color: var(--color2);
+}
+.available-3{
+    background-color: var(--color3);
+}
+.available-4{
+    background-color: var(--color4);
+}
+.available-5{
+    background-color: var(--color5);
+}
+
+#availability-box{
+    display: flex;
+    gap: 15px;
+
+}
+.availability-text{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: center;
+}
+#legend > span{
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#legend-gradient{
+    border: 1px solid black;
+    width: 200px;
+    height: 35px;
+    margin-top: 5px;
+    background-image: linear-gradient(to right, 
+    var(--color0) 0% 20%,
+    var(--color1) 20% 35%,
+    var(--color2) 35% 50%,
+    var(--color3) 50% 65%,
+    var(--color4) 65% 85%,
+    var(--color5) 85% 100%
+    );
+}
