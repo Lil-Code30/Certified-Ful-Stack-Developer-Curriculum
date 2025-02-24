@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+h1{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+}
+tr[class="header"]{
+    background: linear-gradient(to bottom, #caf0f8,#00b4d8, #48cae4);
+    height: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tr{
+
+    height: 40px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+tr[class="read"]{
+    background-image: linear-gradient(to bottom, #58d68d,#2ecc71,#28b463, #2ecc71);
+}
+tr[class="in-progress"]{
+    background-image: linear-gradient(to bottom, #f5b041,#f5b041,#f5b041, #d68910, #f39c12);
+}
+tr[class="to-read"]{
+    background-image: linear-gradient(to bottom, #f8f9fa,#e9ecef,#adb5bd, #adb5bd, #adb5bd);
+}
+span{
+    display: inline-block;
+}
+tr[class="to-read"] span[class="status"]{
+    border: 1px solid #d00000;
+    background-image: linear-gradient(to bottom, #f25c54,#ef6071,#f45950,#ef233c,#d00000);
+    padding: 0.3rem;
+    border-radius: 20px;
+    width: 70px;
+ 
+}
+tr[class="read"] span[class="status"]{
+    background-image: linear-gradient(to bottom, #3de282,#2bf680,#22ab5b, #2dd874);
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #22ab5b;
+    width: 70px;
+}
+tr[class="in-progress"] span[class="status"]{
+    background-image: linear-gradient(to bottom, #edaf4a,#e2a138,#feae2f, #d68809,#f39c12, #f39c12);
+    padding: 0.3rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid #d68910;
+    width: 95px;
+}
+span[class="status"], span[class="rate"]{
+    height: 30px;
+    width: 30px;
+    padding: 0 5px;
+}
+span[class*="rate"]  span {
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 0 1px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(241, 236, 236);
+}
+span[class*="one"] span:first-child{
+    background-image: linear-gradient(#ffc400, #e4b51a);
+}
+span[class*="two"] span:nth-child(-n+2){
+    background-image: linear-gradient(#ffc400, #e4b51a);
+}
+span[class*="three"] span{
+    background-image: linear-gradient(#ffc400, #e4b51a);
+}
