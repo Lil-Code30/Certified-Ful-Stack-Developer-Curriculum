@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.magazine-cover{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto repeat(2, 1fr);
+    gap: 5px;
+    grid-template-areas: 
+    'header header header' 
+    'article1 article1 cover1'
+    'article2 article3 cover1';
+}
+.title{
+    background-color: rgb(2, 2, 8);
+    grid-area: header;
+    color: azure;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.feature-article{
+    grid-area: article1;
+    background-color: gray;
+}
+.small-article1{
+    grid-area: article2;
+    background-color: gray;
+}
+.small-article2{
+    grid-area: article3;
+    background-color: gray;
+}
+.cover-image{
+    grid-area: cover1;
+    background-color: gray;
+}
